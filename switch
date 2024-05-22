@@ -5,8 +5,11 @@ import java.util.Scanner;
 public class switch_condition {
 
 	public static void main(String[] args) {
-
-		Scanner sc = new Scanner(System.in);
+        
+        // finding in which month how many days are present 
+		
+        
+        Scanner sc = new Scanner(System.in);
 		System.out.println("enter the choice :");
 		int choice = sc.nextInt();
 
