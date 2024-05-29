@@ -1,30 +1,28 @@
 package emplloyee_database;
 
-import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.util.Iterator;
 
-public class demo1 {
-public static void main(String[] args) {
-	
-	try {
-		Class.forName("org.postgresql.Driver");
-		String url="jdbc:postgresql://localhost:5432/postgres";
-		String username="postgres";
-		String pass="sOny@2003";
-		Connection c=DriverManager.getConnection(url,username,pass);
-		Statement s=c.createStatement();
-		String query="insert into employee values(23,'sharath','cse')";
-		int i=s.executeUpdate(query);
-		
-		System.out.println(i);
-		
-	} catch (Exception e) {
-		e.printStackTrace();
-	}	
-	
-}
-	
-}
+public class conneection {
 
+	public static void main(String[] args) {
+
+		try {
+			Class.forName("org.postgresql.Driver");
+			String url = "jdbc:postgresql://localhost:5432/postgres";
+			String username = "postgres";
+			String pass = "sOny@2003";
+
+			// we have a method to make connection is==>DriverManager.getconnection();
+			// pass the parameters url, username, password
+
+			Connection c = DriverManager.getConnection(url, username, pass);
+			System.out.println("connection established successfully !");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
