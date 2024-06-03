@@ -29,6 +29,12 @@ public class switch_condition {
 			System.out.println("28 days!");
 			break;
 
+			case 14:
+			{
+
+				System.out.println("hi sharath y completed ur task !");
+			}
+
 		default:
 			System.out.println(" does't exist");
 		}
